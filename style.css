@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+.flex-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+nav .iden{
+    background-color: rgb(174, 171, 171);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+    justify-content: space-around;
+    width: 50%;
+    margin:auto;
+}
+nav ul li{
+    margin: 10px 0px;
+    list-style: none;
+}
+nav ul li a {
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    border:1px solid;
+    border-radius: 20px ;
+    color : rgb(0, 0, 0);
+}
+
+nav ul li a:hover , a:active{
+    background-color: rgb(49, 48, 48);
+    color: white;
+}
+
+.img1{
+    width:auto;
+    color:white;
+    height: 100vh;
+    position: relative;
+
+}
+.img1::before{
+    content: "";
+    background: url(gym.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.img1 .about_box1{
+    border: 2px solid white;
+    width: 30vw;
+    position: relative;
+    top: 30%;
+    margin-left: 5%;
+    padding: 4px;
+
+}
+.img1 .about_box2{
+    border: 2px solid white;
+    width: 30vw;
+    position: relative;
+    top: 40%;
+    margin-left: 5%;
+    padding: 4px;
+
+}
+.about_box1 h1{
+    display: flex;
+    border-bottom: 4px solid white;
+    align-items: center;
+    justify-content: center;
+    margin : 2px 0px;
+}
+.about_box2 h1{
+    display: flex;
+    border-bottom: 4px solid white;
+    align-items: center;
+    justify-content: center;
+    margin : 2px 0px;
+}
+.about_box1 ul li,.about_box2 ul li{
+    margin : 2px; 
+    padding : 2px;
+    list-style-position: inside;
+}
+
+.about h1{
+    width : 200px;
+    margin : auto;
+    font-size: 3rem;
+}
+.cards{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+
+#card1,#card2,#card3,#card4{
+    border:2px solid grey;
+    border-radius: 20px;
+    margin:10px 8px;
+    padding : 8px;
+    text-align: justify;
+}
+
+
+/* Footer style  */
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 208, 208);
+    width: 300px;
+    align-items: center;
+    margin: 2px;
+    border-radius: 10px;
+    /* justify-content: center; */
+}
+.forms #address{
+    resize: none;
+}
+.forms input{
+    width:100%;
+    height: auto;
+    /* border-radius: 3px; */
+}
+.forms #address{
+    width:90%;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+	background: #2c2c2c;
+	flex-direction: column;
+}
+
+.container{
+    margin-top: 2px;
+	display: flex;
+	column-gap: 28px;
+    margin-bottom: 2px;
+}
+
+.icon{
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	font-size: 25px;
+	outline: 2px solid white;
+	border-radius: 50%;
+	transition-property: outline-offset,outline-color,background-color;
+	transition-duration: 0.25s;
+	color: white;
+}
+
+.icon:hover{
+	outline-offset: 4px;
+}
+
+.icon i{
+	margin: auto;
+}
+
+.icon-instagram:hover{
+	background-color: rgb(221, 53, 212);
+	outline-color: rgb(124, 68, 117);
+}
+
+.icon-twitter:hover{
+	background-color: rgb(0, 81, 255);
+	outline-color: blue;
+}
+
+.icon-github:hover{
+	background-color: rgb(0, 0, 0);
+	outline-color: rgb(255, 255, 255);
+}
+
+.icon-codepen:hover{
+	background-color: rgb(10, 233, 51);
+	outline-color: rgb(34, 236, 37);
+}
+
+.icon:hover i{
+	animation: shake 0.25s;
+}
+
+@keyframes shake{
+	10%{
+		transform: rotate(15deg);
+	}
+	20%{
+		transform: rotate(-15deg);
+	}
+}
+
+.copyright{
+	margin-top:10px;
+	display: inline-block;
+	color:white;
+}
